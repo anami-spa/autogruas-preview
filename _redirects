@@ -1,0 +1,117 @@
+# ============================================================
+# Redirects 301 — rutas del WordPress anterior → URL base
+#
+# Fuente de la lista: scripts/verify-redirects.mjs (única fuente).
+# Si agregas una ruta acá, agrégala también allá o deja de estar cubierta
+# por el criterio de aceptación.
+#
+# El 301 de www → apex NO está acá: _redirects sólo discrimina rutas, no
+# hosts. Ese vive como Redirect Rule de la zona en Cloudflare.
+# Ver docs/DNS-MIGRACION.md.
+#
+# Cada ruta va en sus dos formas (con y sin barra final) porque Cloudflare
+# Pages no normaliza la barra al hacer matching.
+# ============================================================
+
+# --- Páginas indexadas en Google (verificado 2026-10-10) ---
+/47-2/                                                                                    /  301
+/47-2                                                                                     /  301
+/footer/                                                                                  /  301
+/footer                                                                                   /  301
+
+# --- Páginas y posts que existieron en WordPress ---
+/13-2/                                                                                    /  301
+/13-2                                                                                     /  301
+/sample-page/                                                                             /  301
+/sample-page                                                                              /  301
+/hello-world/                                                                             /  301
+/hello-world                                                                              /  301
+/category/uncategorized/                                                                  /  301
+/category/uncategorized                                                                   /  301
+/feed/                                                                                    /  301
+/feed                                                                                     /  301
+
+# --- Páginas de adjunto de WordPress (33) ---
+/a-cinematic-photograph-of-a-large-white-_f3qm8pperbkxmeg2miq1bq_5x_9ugobsyw_4mngj1eipq/  /  301
+/a-cinematic-photograph-of-a-large-white-_f3qm8pperbkxmeg2miq1bq_5x_9ugobsyw_4mngj1eipq   /  301
+/a-cinematic-photograph-of-a-large-white-_hm4grt0gs8umfmaxbxv2mw_5x_9ugobsyw_4mngj1eipq/  /  301
+/a-cinematic-photograph-of-a-large-white-_hm4grt0gs8umfmaxbxv2mw_5x_9ugobsyw_4mngj1eipq   /  301
+/a-detailed-photograph-of-a-white-mercede_5_ppwbnkqhgjvitqrm2ejq_fmiidssbsvkg9jgadfgwia/  /  301
+/a-detailed-photograph-of-a-white-mercede_5_ppwbnkqhgjvitqrm2ejq_fmiidssbsvkg9jgadfgwia   /  301
+/a-detailed-photograph-showcasing-a-robus_if-uirbotmgwjfps4qzlrg_fmiidssbsvkg9jgadfgwia/  /  301
+/a-detailed-photograph-showcasing-a-robus_if-uirbotmgwjfps4qzlrg_fmiidssbsvkg9jgadfgwia   /  301
+/a-detailed-studio-portrait-of-a-commerci_lhm2n0yrsfwphkh2zge91w_fmiidssbsvkg9jgadfgwia/  /  301
+/a-detailed-studio-portrait-of-a-commerci_lhm2n0yrsfwphkh2zge91w_fmiidssbsvkg9jgadfgwia   /  301
+/a-professional-lifestyle-photograph-of-a_31p8spgwq5avqnsm_nqtea_fmiidssbsvkg9jgadfgwia/  /  301
+/a-professional-lifestyle-photograph-of-a_31p8spgwq5avqnsm_nqtea_fmiidssbsvkg9jgadfgwia   /  301
+/asistencia-bateria-225x300/                                                              /  301
+/asistencia-bateria-225x300                                                               /  301
+/asistencia-vial/                                                                         /  301
+/asistencia-vial                                                                          /  301
+/cambia-neumatico/                                                                        /  301
+/cambia-neumatico                                                                         /  301
+/camion3/                                                                                 /  301
+/camion3                                                                                  /  301
+/camion4/                                                                                 /  301
+/camion4                                                                                  /  301
+/captura-desde-2025-08-07-16-42-38/                                                       /  301
+/captura-desde-2025-08-07-16-42-38                                                        /  301
+/combustible-pixabay/                                                                     /  301
+/combustible-pixabay                                                                      /  301
+/cropped-cambia-neumatico-jpg/                                                            /  301
+/cropped-cambia-neumatico-jpg                                                             /  301
+/cropped-logo_autogruas_concepcion_transparente-1/                                        /  301
+/cropped-logo_autogruas_concepcion_transparente-1                                         /  301
+/favicon-96x96/                                                                           /  301
+/favicon-96x96                                                                            /  301
+/favicon-96x96-2/                                                                         /  301
+/favicon-96x96-2                                                                          /  301
+/fondo-bateria/                                                                           /  301
+/fondo-bateria                                                                            /  301
+/gruas-en-concepcion-e1416677551189/                                                      /  301
+/gruas-en-concepcion-e1416677551189                                                       /  301
+/gruas1/                                                                                  /  301
+/gruas1                                                                                   /  301
+/gruas2/                                                                                  /  301
+/gruas2                                                                                   /  301
+/gruas3/                                                                                  /  301
+/gruas3                                                                                   /  301
+/logo-movil-liviana/                                                                      /  301
+/logo-movil-liviana                                                                       /  301
+/logo-movil-liviana-2/                                                                    /  301
+/logo-movil-liviana-2                                                                     /  301
+/logo31/                                                                                  /  301
+/logo31                                                                                   /  301
+/logo_autogruas_concepcion_transparente/                                                  /  301
+/logo_autogruas_concepcion_transparente                                                   /  301
+/mecanica/                                                                                /  301
+/mecanica                                                                                 /  301
+/neumatico-pixabay/                                                                       /  301
+/neumatico-pixabay                                                                        /  301
+/nueva/                                                                                   /  301
+/nueva                                                                                    /  301
+/openart-319bf6a6-b33b-46a3-ba6e-dcf8e18b67ca/                                            /  301
+/openart-319bf6a6-b33b-46a3-ba6e-dcf8e18b67ca                                             /  301
+/openart-image_i6zxweqe_1754501029167_raw/                                                /  301
+/openart-image_i6zxweqe_1754501029167_raw                                                 /  301
+/openart-image_vvb3k-uv_1754501029015_raw/                                                /  301
+/openart-image_vvb3k-uv_1754501029015_raw                                                 /  301
+/recarga-combustible/                                                                     /  301
+/recarga-combustible                                                                      /  301
+
+# --- Rutas de sistema de WordPress ---
+# No existen en el sitio nuevo: el splat no colisiona con ningún asset real.
+# Incluye /wp-content/uploads/* (imágenes del WP viejo) — ver no-go del plan:
+# no se mapean una a una a sus equivalentes WebP.
+/wp-login.php                                                                             /  301
+/xmlrpc.php                                                                               /  301
+/wp-admin/*                                                                               /  301
+/wp-content/*                                                                             /  301
+/wp-includes/*                                                                            /  301
+/wp-json/*                                                                                /  301
+
+# --- Página huérfana del formulario eliminado ---
+# /gracias existió mientras hubo formulario Formspree. Se eliminó en esta
+# misma tanda; el 301 cubre cualquier enlace o indexación residual.
+/gracias/                                                                                 /  301
+/gracias                                                                                  /  301
